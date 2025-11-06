@@ -1,22 +1,4 @@
 <!DOCTYPE html>
-<head>
-  <title>Подключиться к игре</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-  <h2>Введите IP хоста:</h2>
-  <input type="text" id="ipInput" placeholder="192.168.1.35" />
-  <button onclick="connect()">Подключиться</button>
-
-  <script>
-      function connect() {
-          const ip = document.getElementById('ipInput').value;
-          if (ip) {
-              window.location.href = 'Build/yourgame.html?ip=' + ip;
-          }
-      }
-  </script>
-</body>
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
@@ -75,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebClient.loader.js";
+      var loaderUrl = buildUrl + "/P2P_Nov.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebClient.data",
-        frameworkUrl: buildUrl + "/WebClient.framework.js",
-        codeUrl: buildUrl + "/WebClient.wasm",
+        dataUrl: buildUrl + "/P2P_Nov.data",
+        frameworkUrl: buildUrl + "/P2P_Nov.framework.js",
+        codeUrl: buildUrl + "/P2P_Nov.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "AniriumMobile",
